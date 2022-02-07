@@ -5,8 +5,8 @@ set(CMAKE_CXX_STANDARD 20)
 
 include(cmake/conan.cmake)
 
-option(PACKAGE_TESTS "Build the tests" ON)
-if(PACKAGE_TESTS)
+option(RUN_TESTS "Build the tests" ON)
+if(RUN_TESTS)
     enable_testing()
     find_package(GTest)
 endif()

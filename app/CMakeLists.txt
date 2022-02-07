@@ -8,7 +8,6 @@ target_include_directories(conan_project PRIVATE
 target_link_libraries(conan_project spdlog::spdlog)
 set(app_SOURCE_DIR ${CMAKE_CURRENT_SOURCE_DIR})
 
-option(PACKAGE_TESTS "Build the tests" ON)
-if(PACKAGE_TESTS)
+if(RUN_TESTS)
     add_subdirectory(test)
 endif()
