@@ -1,7 +1,7 @@
 #ifndef CONAN_TEST_MATH_H
 #define CONAN_TEST_MATH_H
 
-consteval int plus(int a, int b) {
+constexpr int plus(int a, int b) {
     return a + b;
 }
 
